@@ -59,7 +59,8 @@ addItem('strawberrys');
 addItem('grapes')
 console.log(basket);
 
-function removedItem(item) {
+
+function removeItem(item) {
     let index = basket.indexOf(item);
     let spliceyBoy = null;
         if (index >= 0){
@@ -70,11 +71,11 @@ function removedItem(item) {
             return spliceyBoy;
         };
 };
-removedItem('chips');
+removeItem('chips');
 console.log('Current basket', basket); //testing it out
 //making null happen
 empty();
-removedItem('chips');
+removeItem('bacon');
 console.log('Current basket', basket);
 
 
